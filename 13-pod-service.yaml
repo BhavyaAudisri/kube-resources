@@ -12,5 +12,5 @@ spec:
   - name: nginx
     image: nginx
     envFrom:
-    - ServiceRef:
+    - serviceRef:
        name: nginx
