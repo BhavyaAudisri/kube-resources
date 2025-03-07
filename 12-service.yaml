@@ -24,5 +24,8 @@ metadata:
     version: "1.0.0"
 spec:
   containers:
-  - name: nginx
-    image: nginx
+  # - name: nginx
+  #   image: nginx
+  - name: almalinux
+    image: almalinux:9
+    command: ["sleep", "1000"]
