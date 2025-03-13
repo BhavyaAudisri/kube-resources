@@ -15,7 +15,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-# pod name
+  # pod name
   name: ebs-static
   # labels:
   #   purpose: "ebs-static-demo"
@@ -27,7 +27,7 @@ spec:
     image: nginx
     volumeMounts:
     - name: persistent-storage
-    # DATA IN THIS LOCATION SHOULD KEPT IN THE VOLUME
+      # DATA IN THIS LOCATION SHOULD KEPT IN THE VOLUME
       mountPath: /usr/share/nginx/html      
   volumes:
   - name: persistent-storage
