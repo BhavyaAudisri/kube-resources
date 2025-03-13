@@ -17,8 +17,8 @@ kind: Pod
 metadata:
 # pod name
   name: ebs-static
-  labels:
-    purpose: "ebs-static-demo"
+  # labels:
+  #   purpose: "ebs-static-demo"
 spec:
   nodeSelector:
     topology.kubernetes.io/zone: us-east-1b
