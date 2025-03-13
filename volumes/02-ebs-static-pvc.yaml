@@ -15,13 +15,8 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  # pod name
-  name: ebs-static
-  # labels:
-  #   purpose: "ebs-static-demo"
+  name: ebs-static  # pod name
 spec:
-  nodeSelector:
-    topology.kubernetes.io/zone: us-east-1b
   containers:
   - name: nginx
     image: nginx
@@ -32,7 +27,7 @@ spec:
   volumes:
   - name: persistent-storage
     persistentVolumeClaim:
-      claimName: ebs-static-pvc
+      claimName: ebs-static-pv
 # ---
 # kind: Service
 # apiVersion: v1
