@@ -18,7 +18,7 @@ metadata:
     purpose: "ebs-dynamic-demo"
 spec:
   nodeSelector:
-    topology.kubernetes.io/zone: us-east-1c # both volume and pod should be created in same Zone
+    topology.kubernetes.io/zone: us-east-1b # both volume and pod should be created in same Zone
   containers:
   - name: nginx
     image: nginx
